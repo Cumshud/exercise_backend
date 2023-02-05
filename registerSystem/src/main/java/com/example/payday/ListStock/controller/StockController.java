@@ -18,6 +18,7 @@ public class StockController {
         return stockService.getStockByTicker(ticker);
     }
 
+    //controller
     @PostMapping("/prices")
     public StocksPricesDto getPricesStocksByFigies(@RequestBody FigiesDto figiesDto) {
         return stockService.getPricesStocksByFigies(figiesDto);
